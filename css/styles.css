@@ -164,3 +164,19 @@ img {
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
 }
+
+/* Languages */
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+.languages .card {
+  text-align: center;
+  margin: 1.2rem 0.8rem 2rem;
+  transition: transform 0.2s ease-in;
+}
+
+.languages .card:hover {
+  transform: translateY(-1rem);
+}
