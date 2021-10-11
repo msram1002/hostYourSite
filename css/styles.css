@@ -37,11 +37,11 @@ p {
 }
 
 img {
-  /* fit inside the container */
+  /* To fit inside the container */
   width: 100%;
 }
 
-/* Navbar styles */
+/* Navbar */
 
 .navbar {
   background-color: var(--primary-color);
@@ -154,4 +154,18 @@ img {
 .stats .grid p {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+/* Cli */
+
+/* Here grid is combination of rows and columns */
+.cli .grid {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Making cli image to span down the first 2 columns and 2 rows */
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
 }
