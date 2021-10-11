@@ -35,3 +35,47 @@ img {
   /* fit inside the container */
   width: 100%;
 }
+
+/* Navbar styles */
+
+.navbar {
+  background-color: #047aed;
+  color: #fff;
+  height: 4.75rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+
+.navbar a:hover {
+  border-bottom: 0.15rem #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 3rem;
+}
+
+.flex {
+  display: flex;
+  /* default flex direction is row */
+  justify-content: center;
+  align-items: center;
+  /* fit to the container */
+  height: 100%;
+}
+
+/* End of Navbar */
