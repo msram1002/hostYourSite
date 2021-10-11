@@ -2,6 +2,10 @@
 
 :root {
   --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #fff;
+  --font-color: #333;
 };
 
 * {
@@ -23,17 +27,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
-}
-
-h1, h2 {
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 1rem 0;
-}
-
-p {
-  margin: 0.5rem 0;
+  color: var(--font-color);
 }
 
 img {
@@ -45,7 +39,7 @@ img {
 
 .navbar {
   background-color: var(--primary-color);
-  color: #fff;
+  color:var(--light-color);
   height: 4.75rem;
 }
 
@@ -54,13 +48,13 @@ img {
 }
 
 .navbar a {
-  color: #fff;
+  color: var(--light-color);
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
 }
 
 .navbar a:hover {
-  border-bottom: 0.15rem #fff solid;
+  border-bottom: 0.15rem var(--light-color) solid;
 }
 
 .navbar .flex {
@@ -72,7 +66,7 @@ img {
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--light-color);
   position: relative;
 }
 
@@ -83,20 +77,11 @@ img {
   bottom: -70px;
   right: 0;
   left: 0;
-  background: #fff;
+  background: var(--light-color);
   -webkit-transform: skewY(-5deg);
   -moz-transform: skewY(-5deg);
   -ms-transform: skewY(-5deg);
   transform: skewY(-5deg);
-}
-
-.showcase h1 {
-  font-size: 3rem;
-}
-
-.showcase p {
-  margin: 1.5rem 0;
-  font-size: 1.25rem;
 }
 
 .showcase .grid {
@@ -119,13 +104,16 @@ img {
   margin: 2rem 0;
 }
 
+.showcase-form input {
+  font-family: 'Lato', sans-serif;
+}
+
 .showcase-form input[type='text'], 
 .showcase-form input[type='email'] {
   border: 0;
   border-bottom: 1px solid #b4b3cb;
   width: 95%;
   padding: 0.25rem;
-  font-size: 1rem;
 }
 
 .showcase-form input:focus {
@@ -168,4 +156,11 @@ img {
 .cli .grid > *:first-child {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+  background-color: var(--light-color);
+}
+
+/* Cloud */
+
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
 }
