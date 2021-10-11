@@ -183,7 +183,7 @@ img {
   margin: 0 1rem;
 }
 
-.footer .social a i{
+.footer .social a i {
   transition: transform 0.2s ease;
 }
 
@@ -191,4 +191,75 @@ img {
   transform: scale(1.2);
   border-radius: 50px;
   cursor: pointer;
+}
+
+/* Responsiveness */
+
+/* Mobile  */
+@media (max-width: 480px) {
+  .navbar {
+    height: 12rem;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+    justify-content: initial;
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar a:hover {
+    border-bottom: none;
+  }
+
+  .showcase {
+    height: 100%;
+  }
+  
+  .showcase-form {
+    top: 2rem;
+    width: 260px;
+  }
+
+  .showcase .grid {
+    grid-template-columns: 100%;
+  }
+
+  .showcase-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .showcase-text p {
+    font-size: 0.9rem;
+  }
+
+  .showcase-form.card {
+    margin: 0 auto;
+  }
+
+  .stats {
+    padding-top: 5rem;
+  }
+
+  .stats .grid.grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  h3.stats-heading {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0;
+  }
+
+  .stats .grid h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+  }
+
+  .stats .grid p {
+    margin: 0;
+  }
 }
