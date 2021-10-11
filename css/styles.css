@@ -86,8 +86,8 @@ img {
 
 .showcase .grid {
   overflow: visible;
-  grid-template-columns: 60% 40%;
-  gap: 2.5rem;
+  grid-template-columns: 55% 40%;
+  gap: 3rem;
 }
 
 .showcase-form {
@@ -126,12 +126,8 @@ img {
   padding-top: 100px;
 }
 
-.stats h3 {
-  font-size: 1.5rem;
-}
-
 .stats-heading {
-  max-width: 650px;
+  max-width: 768px;
   margin: 2rem auto;
 }
 
@@ -179,4 +175,10 @@ img {
 
 .languages .card:hover {
   transform: translateY(-1rem);
+}
+
+/* Footer */
+
+.footer .social a {
+  margin: 0 1rem;
 }
