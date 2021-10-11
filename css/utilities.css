@@ -59,3 +59,71 @@
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
+
+.text-center {
+  text-align: center;
+}
+
+/* Margins */
+
+.mgy-1 {
+  margin: 1rem 0;
+}
+
+.mgy-2 {
+  margin: 1.5rem 0;
+}
+
+.mgy-3 {
+  margin: 2rem 0;
+}
+
+.mgy-4 {
+  margin: 3rem 0;
+}
+
+.mgy-5 {
+  margin: 3.5rem 0;
+}
+
+.mg-1 {
+  margin: 1rem;
+}
+
+.mg-2 {
+  margin: 1.5rem;
+}
+
+.mg-3 {
+  margin: 2rem;
+}
+
+.mg-4 {
+  margin: 3rem;
+}
+
+.mg-5 {
+  margin: 3.5rem;
+}
+
+/* Paddings */
+
+.pdg-1 {
+  padding: 1rem;
+}
+
+.pdg-2 {
+  padding: 1.5rem;
+}
+
+.pdg-3 {
+  padding: 2rem;
+}
+
+.pdg-4 {
+  padding: 3rem;
+}
+
+.pdg-5 {
+  padding: 3.5rem;
+}

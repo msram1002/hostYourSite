@@ -66,7 +66,6 @@ img {
 .navbar .flex {
   justify-content: space-between;
 }
-/* End of Navbar */
 
 /* Showcase */
 
@@ -85,10 +84,10 @@ img {
   right: 0;
   left: 0;
   background: #fff;
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  transform: skewY(-3deg);
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  transform: skewY(-5deg);
 }
 
 .showcase h1 {
@@ -133,62 +132,26 @@ img {
   outline: none;
 }
 
-/* Utilities */
+/* Stats */
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 3rem;
+.stats {
+  padding-top: 100px;
 }
 
-.flex {
-  display: flex;
-  /* default flex direction is row */
-  justify-content: center;
-  align-items: center;
-  /* fit to the container */
-  height: 100%;
+.stats h3 {
+  font-size: 1.5rem;
 }
 
-.card {
-  background-color: #fff;
-  color: #333;
-  border-radius: 0.5rem;
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
-  padding: 1.25rem;
-  margin: 0.8rem;
+.stats-heading {
+  max-width: 650px;
+  margin: 2rem auto;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.5rem 2rem;
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 0.25rem;
+.stats .grid h3 {
+  font-size: 1.75rem;
 }
 
-.btn-outline {
-  background-color: transparent;
-  border: 1px #fff solid;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
-/* Grid */
-.grid {
-  display: grid;
-  /* Grid doesnt apply changes like flex */
-  /* grid-template-columns: 300px 250px; */
-  grid-template-columns: 2fr 1fr;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* space in between */
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.stats .grid p {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
