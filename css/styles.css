@@ -208,6 +208,34 @@ img {
     grid-template-rows: 1fr;
   }
 
+  .navbar {
+    height: 12rem;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+    justify-content: initial;
+    overflow: hidden;
+  }
+
+  .navbar .flex h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+
+  .navbar ul {
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar a {
+    padding: 0.5rem 2.5rem;
+  }
+
+  .navbar a:hover {
+    border-bottom: none;
+  }
+
   .showcase {
     height: auto;
   }
@@ -222,6 +250,12 @@ img {
     justify-self: center;
     margin: auto;
     animation: slideInFromBottom 1s ease-in;
+  }
+
+  .showcase-form.card {
+    margin: 0;
+    padding: 2rem;
+    width: 375px;
   }
 
   .cli .grid > *:first-child {
@@ -290,17 +324,16 @@ img {
     background-color: rgba(0, 0, 0, 0.1);
   }
 
+  .navbar a {
+    padding: 0.5rem 1rem;
+  }
+
   .navbar a:hover {
     border-bottom: none;
   }
 
   .showcase {
-    height: 100%;
-  }
-  
-  .showcase-form {
-    top: 2rem;
-    width: 230px;
+    height: auto;
   }
 
   .showcase .grid {
@@ -318,8 +351,9 @@ img {
   }
 
   .showcase-form.card {
-    margin: 0 auto;
-    padding: 2rem;
+    top: 2rem;
+    width: 275px;
+    margin: 0;
   }
 
   .stats {
