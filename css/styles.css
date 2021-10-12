@@ -222,23 +222,26 @@ img {
   
   .showcase-form {
     top: 2rem;
-    width: 260px;
+    width: 230px;
   }
 
   .showcase .grid {
     grid-template-columns: 100%;
+    gap: 1rem;
   }
 
-  .showcase-text h1 {
+  .showcase-text h1, .footer h1 {
     font-size: 1.5rem;
   }
 
-  .showcase-text p {
-    font-size: 0.9rem;
+  .showcase-text p, .cloud .grid p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
   }
 
   .showcase-form.card {
     margin: 0 auto;
+    padding: 2rem;
   }
 
   .stats {
@@ -247,6 +250,7 @@ img {
 
   .stats .grid.grid-3 {
     grid-template-columns: repeat(1, 1fr);
+    margin: 2rem 0;
   }
 
   h3.stats-heading {
@@ -261,5 +265,79 @@ img {
 
   .stats .grid p {
     margin: 0;
+  }
+
+  .cli .grid, .footer .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .cli .grid .card {
+    padding: 0;
+    margin: 1rem 1.5rem;
+  }
+
+  .cli .grid .card h3 {
+    font-size: 1rem;
+  }
+
+  .cloud {
+    padding: 0;
+  }
+
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .cloud .grid h2, .languages h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .cloud .grid a {
+    margin-top: 1rem;
+  }
+
+  .cloud .grid img {
+    margin-top: 2rem;
+  }
+
+  .languages .flex .card {
+    margin: 0.5rem;
+    padding: 1rem;
+    min-width: 110px;
+    height: 200px;
+  }
+
+  .languages .flex *:last-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer .container.grid {
+    padding: 0;
+  }
+
+  .footer .container.grid h1,
+  .footer .container.grid p {
+    margin: 0;
+  }
+
+  .footer .container.grid nav {
+    margin: 1rem 0;
+  }
+
+  .footer .container.grid nav ul {
+    padding: 0;
+  }
+
+  .footer .social a {
+    margin: 0 1rem 0 0;
   }
 }

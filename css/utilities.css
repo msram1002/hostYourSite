@@ -1,63 +1,3 @@
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 3rem;
-}
-
-.flex {
-  display: flex;
-  /* default flex direction is row */
-  justify-content: center;
-  align-items: center;
-  /* fit to the container */
-  height: 100%;
-}
-
-.card {
-  background-color: var(--light-color);
-  color: var(--font-color);
-  border-radius: 0.5rem;
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
-  padding: 1.25rem;
-  margin: 0.8rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 2rem;
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: var(--light-color);
-  border: none;
-  border-radius: 0.25rem;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 1px var(--light-color) solid;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
-/* Background and Colors */
-
-.bg-primary, .btn-primary {
-  background-color: var(--primary-color);
-  color: var(--light-color);
-}
-
-.bg-dark, .btn-dark {
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-.bg-primary a, .btn-primary a, .bg-dark a, .btn-dark a {
-  color: var(--light-color);
-}
-
 /* Text Sizes */
 
 .lead {
@@ -169,4 +109,66 @@
 
 .pdg-5 {
   padding: 3.5rem;
+}
+
+/* Containers */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 3rem;
+}
+
+.flex {
+  display: flex;
+  /* default flex direction is row */
+  justify-content: center;
+  align-items: center;
+  /* fit to the container */
+  height: 100%;
+}
+
+.card {
+  background-color: var(--light-color);
+  color: var(--font-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  margin: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px var(--light-color) solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* Background and Colors */
+
+.bg-primary, .btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.bg-dark, .btn-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.bg-primary a, .btn-primary a, .bg-dark a, .btn-dark a {
+  color: var(--light-color);
 }
