@@ -71,6 +71,15 @@ img {
   border-bottom: 0.15rem var(--light-color) solid;
 }
 
+.navbar h1 a {
+  padding: initial;
+  margin: initial;
+}
+
+.navbar h1 a:hover {
+  border-bottom: none;
+}
+
 .navbar .flex {
   justify-content: space-between;
 }
@@ -132,6 +141,14 @@ img {
 
 .showcase-form input:focus {
   outline: none;
+}
+
+.showcase-text h1 {
+  line-height: normal;
+}
+
+.showcase-text a {
+  margin-bottom: 1.5rem;
 }
 
 /* Stats */
@@ -289,12 +306,8 @@ img {
     gap:0;
   }
 
-  .showcase-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .showcase-text a {
-    margin-bottom: 1.5rem;
+  .showcase-text h1, .features-head h1, .docs-head h1 {
+    font-size: 2.75rem;
   }
 }
 
@@ -469,13 +482,13 @@ img {
     gap: 1rem;
   }
 
-  .showcase-text h1, .footer h1 {
-    font-size: 2rem;
+  .showcase-text h1, .features-head h1, .docs-head h1, .footer h1 {
+    font-size: 2.5rem;
   }
 
-  .showcase-text p, .cloud .grid p {
+  .showcase-text p, .cloud .grid p, .features-head p, .docs-head p {
     font-size: 1.1rem;
-    margin: 0.5rem 0 1rem;
+    margin: 1.5rem 0 1rem;
   }
 
   .showcase-text a {
@@ -498,8 +511,8 @@ img {
   }
 
   h3.stats-heading {
-    font-size: 1.25rem;
-    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
   }
 
   .stats .grid h3 {
