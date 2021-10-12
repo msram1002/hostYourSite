@@ -86,7 +86,7 @@ img {
 
 .showcase .grid {
   overflow: visible;
-  grid-template-columns: 55% 40%;
+  grid-template-columns: 50% 45%;
   gap: 3rem;
 }
 
@@ -195,6 +195,44 @@ img {
 
 /* Responsiveness */
 
+@media (max-width: 1100px) {
+  .showcase .grid {
+    grid-template-columns: 40% 55%;
+    gap:0;
+  }
+
+  .showcase-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .showcase-text a {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .showcase .grid {
+    grid-template-columns: 100%;
+    gap: 1rem;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text a {
+    margin-bottom: 0;
+  }
+
+  .showcase-form.card {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 500px;
+  }
+}
+
+
 /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
@@ -244,6 +282,10 @@ img {
     text-align: center;
     margin-top: 40px;
     animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-text a {
+    margin-bottom: 0;
   }
 
   .showcase-form {
@@ -342,12 +384,16 @@ img {
   }
 
   .showcase-text h1, .footer h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .showcase-text p, .cloud .grid p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0.5rem 0 1rem;
+  }
+
+  .showcase-text a {
+    margin-bottom: 0;
   }
 
   .showcase-form.card {
@@ -409,7 +455,7 @@ img {
   }
 
   .cloud .grid h2, .languages h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem 0;
   }
 
